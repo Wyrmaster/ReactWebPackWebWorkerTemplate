@@ -1,0 +1,25 @@
+{
+  "name": "react_webpack_webworker_template",
+  "version": "1.0.0",
+  "description": "Template for an empty homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenGotham/ReactWebPackWebWorkerTemplate.git"
+  },
+  "keywords": [
+    "react",
+    "webworker",
+    "typescript",
+    "webpack"
+  ],
+  "author": "Stefan Pichler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StevenGotham/ReactWebPackWebWorkerTemplate/issues"
+  },
+  "homepage": "https://github.com/StevenGotham/ReactWebPackWebWorkerTemplate#readme"
+}
