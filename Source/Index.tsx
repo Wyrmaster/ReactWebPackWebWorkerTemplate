@@ -1,5 +1,5 @@
 // styles
-import './main.scss';
+import './Main.scss';
 // React
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

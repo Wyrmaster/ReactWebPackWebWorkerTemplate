@@ -10,7 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge.merge(common, {
   mode: 'production',
   output: {
-    filename: 'main.[contenthash].js',
+    filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'Build')
   },
   optimization: {
@@ -24,7 +24,8 @@ module.exports = merge.merge(common, {
           collapseWhitespace: true,
           removeComments: true
         },
-        inject: 'body'
+        inject: 'body',
+        filename: 'Index.html'
       })
     ]
   },

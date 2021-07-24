@@ -5,7 +5,8 @@ require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    app: path.join(__dirname, 'Source', 'Index.tsx')
+    vendor: path.join(__dirname, 'Source', 'Vendor.ts'),
+    main: path.join(__dirname, 'Source', 'Index.tsx')
   },
   module: {
     rules: [
