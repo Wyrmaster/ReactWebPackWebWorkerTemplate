@@ -22,7 +22,13 @@ module.exports = {
         test: "/\.js$/",
         loader: "source-map-loader"
       },
-
+      {
+        test: /\.worker\.ts$/,
+        loader: 'worker-loader',
+        options: {
+          esModule: false,
+        }
+      },
       {
         test: /\.html$/,
         use: ['html-loader']
