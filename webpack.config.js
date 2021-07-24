@@ -12,24 +12,17 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
-        exclude: '/node_modules/',
-        include: [
-          path.resolve(__dirname, 'Source')
-        ],
-      },
-      {
-        test: /\.worker\.ts$/,
-        loader: 'worker-loader',
-        options: {
-          esModule: false,
-        }
+        use: {
+          loader: 'ts-loader'
+        },
+        exclude: '/node_modules/'
       },
       {
         enforce: "pre",
         test: "/\.js$/",
         loader: "source-map-loader"
       },
+
       {
         test: /\.html$/,
         use: ['html-loader']
@@ -40,10 +33,13 @@ module.exports = {
           loader: 'file-loader',
           options: {
             name: '[name].[hash].[ext]',
-            outputPath: 'Image'
+            outputPath: 'Images'
           }
         }
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+  },
 };

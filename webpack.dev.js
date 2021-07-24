@@ -1,11 +1,11 @@
 const path = require('path');
-const common = require('./webpack.config');
+const config = require('./webpack.config');
 const merge = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
-module.exports = merge.merge(common, {
+module.exports = merge(config, {
   mode: 'development',
   output: {
     filename: '[name].[contenthash].js',
@@ -35,5 +35,6 @@ module.exports = merge.merge(common, {
         ]
       }
     ]
-  }
+  },
+  devtool: 'source-map'
 });

@@ -1,5 +1,5 @@
 const path = require('path');
-const common = require('./webpack.config');
+const config = require('./webpack.config');
 const merge = require('webpack-merge');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-module.exports = merge.merge(common, {
+module.exports = merge(config, {
   mode: 'production',
   output: {
     filename: '[name].[contenthash].js',
@@ -35,7 +35,7 @@ module.exports = merge.merge(common, {
         filename: '[name].[contenthash].css'
       }
     ),
-    new CleanWebpackPlugin.CleanWebpackPlugin()
+    new CleanWebpackPlugin()
   ],
   module: {
     rules: [
@@ -48,6 +48,5 @@ module.exports = merge.merge(common, {
         ]
       }
     ]
-  },
-  devtool: 'source-map',
+  }
 });
