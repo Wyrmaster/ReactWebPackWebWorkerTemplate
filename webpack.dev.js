@@ -21,7 +21,8 @@ module.exports = merge(config, {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'Source', 'Index.html'),
       filename: 'Index.html',
-      inject: 'body'
+      inject: 'body',
+      favicon: 'Favicon.ico'
     })
   ],
   module: {
@@ -36,5 +37,10 @@ module.exports = merge(config, {
       }
     ]
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'Build'),
+    compress: true,
+    port: 9000,
+  }
 });

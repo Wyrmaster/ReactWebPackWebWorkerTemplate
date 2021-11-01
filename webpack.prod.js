@@ -25,7 +25,8 @@ module.exports = merge(config, {
           removeComments: true
         },
         inject: 'body',
-        filename: 'Index.html'
+        filename: 'Index.html',
+        favicon: 'Favicon.ico'
       })
     ]
   },
