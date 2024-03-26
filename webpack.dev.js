@@ -39,8 +39,9 @@ module.exports = merge(config, {
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'Build'),
+    static: path.join(__dirname, 'Build'),
     compress: true,
     port: 9000,
+
   }
 });
