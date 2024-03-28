@@ -9,7 +9,7 @@
 		"removeComments": true,
 		"jsx": "react",
 		"allowJs": true,
-		"allowSyntheticDefaultImports": true,
+		"allowSyntheticDefaultImports": true
 	},
 	"include": [
 		"./Source/**/*"
