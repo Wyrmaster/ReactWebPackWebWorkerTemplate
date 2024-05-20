@@ -1,6 +1,6 @@
 {
   "name": "react_webpack_webworker_template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Template for an empty homepage",
   "main": "Index.tsx",
   "scripts": {
@@ -26,16 +26,16 @@
   "homepage": "https://github.com/StevenGotham/ReactWebPackWebWorkerTemplate#readme",
   "devDependencies": {
     "@types/node": "^16.4.1",
-    "@types/react": "^17.0.15",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
     "@types/webpack": "^5.28.0",
     "clean-webpack-plugin": "^2.0.2",
     "css-loader": "6.10.0",
+    "css-minimizer-webpack-plugin": "5.0.1",
     "file-loader": "6.2.0",
-    "html-loader": "^0.5.5",
+    "html-loader": "^5.0.0",
     "html-webpack-plugin": "5.6.0",
     "mini-css-extract-plugin": "2.7.6",
-    "css-minimizer-webpack-plugin": "5.0.1",
     "sass": "^1.36.0",
     "sass-loader": "14.1.1",
     "source-map-loader": "^3.0.0",
@@ -50,8 +50,8 @@
     "worker-loader": "^3.0.8"
   },
   "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "webworker": "^0.8.4"
   }
 }
